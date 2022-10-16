@@ -16,7 +16,7 @@ install_dev:  ## Install the python module with dev dependencies
 .PHONY: precommit_install
 precommit_install:  ## Install the project's precommit hooks from .pre-commit-config.yaml
 	@echo "Installing pre-commit hooks"
-	@echo "Make sure to first run install_test first"
+	@echo "Make sure to first run install_dev first"
 	pre-commit install
 
 .PHONY: lint
